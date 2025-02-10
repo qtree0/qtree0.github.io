@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 10%;
+    text-align: center;
+}
+
+header h1 {
+    letter-spacing: 0.07em;
+    margin: 0;
+    font-size: 4rem; /* 크기를 키움 */
+    font-weight: bold;
+}
+
+header nav {
+    margin-top: 20px; /* 제목과 링크 사이의 간격 */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 350px; /* 링크 간 간격 */
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    text-decoration: none; /* 기본 밑줄 제거 */
+    color: #fff; /* 링크 글자 색상 */
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #b69076; /* 호버 시 글자색 변경 */
+}
+
+section.intro {
+    text-align: center;
+    padding: 50px 10%;
+}
+
+section.intro p {
+    font-size: 1.45rem;
+    font-weight: bold;
+    
+    line-height: 2;
+
+}
+
+section.projects {
+    padding: 30px 10%;
+    display: grid; /* grid 레이아웃 사용 */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 카드 크기를 유동적으로 조정 */
+    gap: 40px; /* 카드 간격 */
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9; /* 이미지 비율을 16:9로 고정 */
+    object-fit: cover; /* 이미지를 카드 영역에 맞게 조정 */
+    border-bottom: 1px solid #ddd;
+}
+
+.project-card .content {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+}
+
+.project-card p {
+    margin: 0 0 5px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.project-card a {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.project-card a:hover {
+    background-color: #b69076;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10%;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #b69076;
+    text-decoration: none;
+}
+
+
+
+/* 상세 페이지 */
+.placeholder {
+    text-align: center;
+    padding: 50px 10%;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+    background-color: #f9f9f9;
+    border: 1px dashed #ccc;
+    border-radius: 10px;
+    margin: 50px auto;
+    max-width: 800px;
+}
